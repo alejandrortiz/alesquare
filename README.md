@@ -1,38 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Accounting and Home Management App
 
-## Getting Started
+Este es el README.md de mi proyecto personal para una aplicación web que utilizará NextJS con TypeScript, desplegado en Vercel, con una base de datos en Supabase y el diseño se inspirará en el siguiente enlace: https://demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/index.html. Esta aplicación servirá para llevar mi contabilidad personal y de casa, listado de la compra y control de Stock en casa. En un futuro, también se incluirá un asistente/ayudante apoyado en IA.
 
-First, run the development server:
+## Descripción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Este proyecto es una aplicación web que permite la gestión de la contabilidad personal y del hogar, el control de stock en casa y el listado de la compra. La base de datos utilizada es Supabase, una plataforma que permite la creación y gestión de bases de datos de forma sencilla y rápida. El diseño de la aplicación se inspira en el enlace proporcionado, y se utiliza Bootstrap para la implementación del diseño responsive.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+En un futuro, se incluirá un asistente/ayudante apoyado en IA para ayudar en la gestión y optimización de la contabilidad personal y del hogar.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Características
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Gestión de la contabilidad personal y del hogar.
+- Control de stock en casa.
+- Listado de la compra.
+- Asistente/ayudante apoyado en IA (en un futuro).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Tecnologías utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- NextJS
+- TypeScript
+- Supabase
+- Bootstrap
+- IA (en un futuro)
 
-## Learn More
+## Requisitos
 
-To learn more about Next.js, take a look at the following resources:
+- NodeJS y npm instalados en el sistema.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Instalación
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clonar este repositorio: `git clone https://github.com/<nombre_de_usuario>/<nombre_del_repositorio>.git`
+2. Instalar las dependencias: `npm install`
+3. Iniciar la aplicación: `npm run dev`
 
-## Deploy on Vercel
+## Contribución
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Se aceptan contribuciones y sugerencias en forma de pull requests o issues. Para discutir cambios mayores, por favor, abra primero un issue para discutirlo.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licencia
+
+Este proyecto está bajo la Licencia MIT.
+Personal Accounting and Home Management App
+
+Este es el README.md de mi proyecto personal para una aplicación web que utilizará NextJS con TypeScript, desplegado en Vercel, con una base de datos en Supabase y el diseño se inspirará en el siguiente enlace: https://demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/index.html. Esta aplicación servirá para llevar mi contabilidad personal y de casa, listado de la compra y control de Stock en casa. En un futuro, también se incluirá un asistente/ayudante apoyado en IA.
+Descripción
+
+Este proyecto es una aplicación web que permite la gestión de la contabilidad personal y del hogar, el control de stock en casa y el listado de la compra. La base de datos utilizada es Supabase, una plataforma que permite la creación y gestión de bases de datos de forma sencilla y rápida. El diseño de la aplicación se inspira en el enlace proporcionado, y se utiliza Bootstrap para la implementación del diseño responsive.
+
+En un futuro, se incluirá un asistente/ayudante apoyado en IA para ayudar en la gestión y optimización de la contabilidad personal y del hogar.
+Características
+
+    Gestión de la contabilidad personal y del hogar.
+    Control de stock en casa.
+    Listado de la compra.
+    Asistente/ayudante apoyado en IA (en un futuro).
+
+Tecnologías utilizadas
+
+    NextJS
+    TypeScript
+    Supabase
+    Bootstrap
+    IA (en un futuro)
+
+Requisitos
+
+    NodeJS y npm instalados en el sistema.
+
+Instalación
+
+    Clonar este repositorio: git clone https://github.com/<nombre_de_usuario>/<nombre_del_repositorio>.git
+    Instalar las dependencias: npm install
+    Iniciar la aplicación: npm run dev
+
+Contribución
+
+Se aceptan contribuciones y sugerencias en forma de pull requests o issues. Para discutir cambios mayores, por favor, abra primero un issue para discutirlo.
+Licencia
+
+Este proyecto está bajo la Licencia MIT.
