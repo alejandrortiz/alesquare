@@ -22,7 +22,7 @@ export function loginWithGoogle(): void {
 
 export function onAuthStateChange(callback: any): void {
   return supabase.auth.onAuthStateChange((event: string, session: any) => {
-    if (event === 'SIGNED_OUT') {
+    if (event === 'SIGNED_OUT' || !session) {
       callback(null)
     }
 

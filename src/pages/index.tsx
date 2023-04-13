@@ -1,13 +1,18 @@
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import { loginWithGoogle, onAuthStateChange } from '@/supabase/client'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+
+import { loginWithGoogle } from '@/supabase/client'
+import Spinner from '@/components/Spinner'
+import useUser, { USER_STATES } from '@/hooks/useUser'
 
 export default function Index() {
-  const [user, setUser] = useState<any | null>(null)
+  const user = useUser()
+  const router = useRouter()
 
-  useEffect((): void => {
-    onAuthStateChange(setUser)
-  }, [])
+  useEffect(() => {
+    user && router.replace('/home')
+  }, [user])
 
   const handlerGoogleSignIn = () => {
     loginWithGoogle()
@@ -37,7 +42,7 @@ export default function Index() {
                 Please sign-in to your account and start the adventure
               </p>
             </section>
-            {user === null && (
+            {user === USER_STATES.NOT_LOGGED && (
               <div className='mb-3'>
                 <button
                   onClick={handlerGoogleSignIn}
@@ -47,13 +52,7 @@ export default function Index() {
                 </button>
               </div>
             )}
-            {user && user.avatar && (
-              <div className='mb-3'>
-                <img src={user.avatar} referrerPolicy='no-referrer' />
-                <p>{user.name}</p>
-                <p>{user.email}</p>
-              </div>
-            )}
+            {user === USER_STATES.NOT_KNOWN && <Spinner color='#5184ec' />}
           </main>
         </div>
       </div>
